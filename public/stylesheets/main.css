@@ -1,0 +1,24 @@
+body {
+	padding-top: 20%;
+	font-family: 'Roboto Mono', monospace;
+	color: rgb(54, 54, 54);
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 44px;
+}
+
+p {
+	font-size: 18px;
+}
+
+ul {
+	margin: auto auto;	
+}
+
+li {
+	text-align: right;
+	list-style: none;
+}
+
