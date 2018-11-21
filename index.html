@@ -2,41 +2,47 @@
 <html>
 	<head>
 		<title>Khatna Bold</title>
-		
+		<!--bootstrap-->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-		<link rel="stylesheet" href="./public/stylesheets/main.css" type="text/css">
-		
 		<!-- font Roboto Mono -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
-		
 		<!--jquery-->
 		<script
 	  src="https://code.jquery.com/jquery-3.3.1.min.js"
 	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	  crossorigin="anonymous"></script>
+	  <!--local stylesheet-->
+	  <link rel="stylesheet" href="./public/stylesheets/main.css" type="text/css">
 	</head>
 	
 	<body>
 		<div class="container">
 			<div class="row">
-    		<div class="col">
-      		<div class="header">
-	      		<h1 class="text-left">Khatna Bold</h1>
-		    		<p id="bio">Mongolian student at Princeton University</p>
-					</div>
+    		<div class="col col-xs-12">
+      		<h1 class="text-left">Khatna Bold</h1>
+	    		<p>Mongolian CS student at Princeton University<span id="_">_</span></p>
     		</div>
-    		<div class="col text-center">
-      		<h3 class="text-right"> Links </h3>
+    		<div class="col col-xs-12" id="links">
       		<ul>
-      			<li><a href="index.html">projects</a></li>
-      			<li><a href="http://www.github.com/khatna">github</a></li>
-	      		<li><a href="http://www.linkedin.com/in/khatnabold">linkedin</a></li>	
-	      		<li><a href="http://www.instagram.com/khatnaaa">instagram</a></li>
+      			<li><a href="http://www.github.com/khatna">Github</a></li>
+	      		<li><a href="http://www.linkedin.com/in/khatnabold">LinkedIn</a></li>
+	      		<li><a href="mailto:bold@princeton.edu">Email</a></li>
       		</ul>
     		</div>
   		</div>
-			
 		</div>
+		
+    <div class="container">
+      <a href="http://khatna-circles.herokuapp.com">
+        <img class="project float-left l" src="./public/circles.PNG">
+      </a>
+      <a href="http://khatna.github.io/bensense">
+        <img class="project float-left r" src="./public/bensense.jpg">
+      </a>
+    </div>
+    <div class="container">
+      <p id="blurb">... and more to come.</p>
+    </div>
 	</body>
 	<script src="public/js/main.js"></script>
 </html>

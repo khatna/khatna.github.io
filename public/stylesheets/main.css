@@ -1,24 +1,63 @@
 body {
-	padding-top: 20%;
+	margin-top: 5%;
 	font-family: 'Roboto Mono', monospace;
 	color: rgb(54, 54, 54);
 }
 
+/* Bio -----------------------------------------------------------------------*/
+
 h1 {
-	font-weight: normal;
-	font-size: 44px;
+	font-size: 52px;
 }
 
 p {
 	font-size: 18px;
 }
 
-ul {
-	margin: auto auto;	
+.hidden {
+	display: none;
 }
+
+/* Links tab -----------------------------------------------------------------*/
 
 li {
-	text-align: right;
 	list-style: none;
+	text-align: right;
 }
 
+li a {
+	font-size: 16px;
+	color: rgb(96, 96, 96);
+	transition-duration: 0.2s;
+}
+
+li a:hover {
+	padding-right: 8px;
+	font-weight: bold;
+	color: rgb(48, 48, 48);
+	text-decoration: none;
+}
+/* Project thumbnails --------------------------------------------------------*/
+
+img.project {
+	margin-top: 50px;
+	width: 48.7%;
+	-webkit-filter: brightness(85%);
+}
+
+.project.l {
+	margin-right: 0.65%;
+}
+
+.project.r {
+	margin-left: 0.65%;
+}
+
+.project:hover {
+	-webkit-filter: brightness(100%);
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
