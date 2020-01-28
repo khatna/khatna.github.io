@@ -40,9 +40,12 @@ li a:hover {
 
 /* Project thumbnails --------------------------------------------------------*/
 
-.project-img {
-	width: 100%;
-	-webkit-filter: brightness(70%);
+* {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 .project {
@@ -53,11 +56,17 @@ li a:hover {
 	float: left;
 }
 
-.project-img:hover {
-	-webkit-filter: brightness(100%);
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
-	transition: all 0.3s ease;
+.project-img {
+	width: 100%;
+}
+
+.project-desc {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	transform: translate(-50%, -50%);
+	color:white;
+	font-size: 0.8em;
 }
