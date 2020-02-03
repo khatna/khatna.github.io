@@ -1,5 +1,5 @@
 body {
-	margin-top: 5%;
+	margin-top: 3%;
 	font-family: 'Roboto Mono', monospace;
 	color: rgb(54, 54, 54);
 }
@@ -19,6 +19,10 @@ p {
 }
 
 /* Links tab -----------------------------------------------------------------*/
+
+ul {
+	padding-right: 0.8em;
+}
 
 li {
 	list-style: none;
@@ -48,25 +52,25 @@ li a:hover {
 	transition: all 0.3s ease;
 }
 
-.project {
-	position: relative;
-	display: block;
-	width: 32%;
-	margin: calc(4%/6);
-	float: left;
-}
-
 .project-img {
 	width: 100%;
 }
 
 .project-desc {
+	overflow: auto;
 	display: none;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	z-index: 1;
 	transform: translate(-50%, -50%);
-	color:white;
+	color: white;
 	font-size: 0.8em;
+}
+
+.no-gutters>.col,
+.no-gutters>[class*="col-"] {
+	padding-right: 0.8em;
+	padding-left: 0;
+	padding-bottom: 0.8em;
 }

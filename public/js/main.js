@@ -4,7 +4,7 @@ setInterval(function () {
 }, 1000);
 
 // hover shows text
-$(".project a").hover(
+$(".col-lg-4 a").hover(
 	function () {
 		$($(this).children()[0]).css('-webkit-filter', 'brightness(20%)');
 		$($(this).children()[1]).css('display', 'inline');
